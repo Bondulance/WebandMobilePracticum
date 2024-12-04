@@ -1,20 +1,144 @@
+:root {
+    --orange: #F76902
+}
+
+body {
+    margin: 0;
+    
+}
+
+main {
+    margin: 50px 100px 0px 100px;
+    
+}
+
 h2 {
+    color: var(--orange);
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; 
 }
 
 h1 {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; 
+    color: white;
 }
 h3 {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; 
+    color: white;
 }
 p {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;   
 }
 
 .paragraph {
+    
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; 
 }
 .link {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif; 
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+    color: black; 
+    font-size: 20px;
+    transition: 200ms ease-in;
+}
+.mobilelink {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+    color: white; 
+    font-size: 20px;
+    transition: 200ms ease-in;
+}
+.mobilelink:hover {
+    color: var(--orange); 
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    padding-right: 40px;
+    
+}
+.link:hover {
+    color: white;
+}
+
+
+header {
+    background: var(--orange);
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 0px 10px 0px black;
+}
+
+#banner {
+    background-image: url("/WebandMobilePracticum/images/Pulteny_9_1__b588f303-9108-42f9-a0d2-567fe1f88c94.jpg");
+    padding: 100px 0px 100px 0px;
+    object-fit: fill;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-repeat: round;
+}
+#banner_h2 {
+    color: white;
+    font-size: 40px;
+}
+
+#image-container {
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+}
+#imagebanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 100px 0px 100px;
+    
+}
+footer {
+    background: black;
+    padding: 20px 100px 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#date {
+    color: white;
+}
+
+.maincontent {
+    margin-bottom: 40px;
+}
+
+#mobilenav {
+    background: black;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 899px) {
+    nav {
+        display: none;
+    }
+    header {
+        text-align: center;
+        justify-content: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    .paragraph {
+        text-align: center;
+    }
+}
+
+@media (min-width: 899px) {
+    #mobilenav {
+        display: none;
+    }
 }
