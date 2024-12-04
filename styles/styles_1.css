@@ -1,0 +1,163 @@
+:root {
+    --bodycolor: #49524D;
+    --header: #5DA779;
+    --footer: #5A7D67;
+    --border: #103920;
+    --mobile: #51D283;
+}
+
+body {
+    margin: 0;
+    background: var(--bodycolor)
+}
+
+main {
+    margin: 50px 100px 0px 100px;
+    
+}
+
+h2 {
+    color: var(--header);
+    font-family: "Kodchasan", serif;}
+
+h1 {
+    font-family: "Kodchasan", serif;    color: black;
+}
+h3 {
+    font-family: "Kodchasan", serif;    color: black;
+}
+p {
+    font-family: "Kodchasan", serif;}
+
+.paragraph {
+    color: white;
+    font-family: "Kodchasan", serif;}
+.link {
+    font-family: "Kodchasan", serif;    color: black; 
+    font-size: 20px;
+    transition: 200ms ease-in;
+}
+.mobilelink {
+    font-family: "Kodchasan", serif;    color: white; 
+    font-size: 20px;
+    transition: 200ms ease-in;
+}
+.mobilelink:hover {
+    color: var(--orange); 
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    padding-right: 40px;
+    
+}
+.link:hover {
+    color: white;
+}
+
+.link1 {
+    color: black;
+    text-decoration: underline;
+    transition: 200ms ease;
+    font-family: "Kodchasan", serif;}
+
+.link1:hover {
+    color:var(--mobile)
+}
+
+header {
+    background: var(--header);
+    padding: 10px 40px 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 0px 10px 0px black;
+}
+
+#banner {
+    background-image: url("/WebandMobilePracticum/images/waterfall.jpg");
+    padding: 100px 0px 100px 0px;
+    object-fit: fill;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-repeat: round;
+}
+#banner_h2 {
+    color: white;
+    font-size: 40px;
+}
+
+#image-container {
+    width: 500px;
+    height: 300px;
+    object-fit: fill;
+    border: 5px solid var(--border);
+}
+#imagebanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 100px 0px 100px;
+    
+}
+footer {
+    background: var(--footer);
+    padding: 20px 100px 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:100px ;
+}
+#date {
+    color: black;
+}
+
+.maincontent {
+    margin-bottom: 40px;
+}
+
+#imagearea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px 30px 0px;
+}
+
+#mobilenav {
+    background: var(--footer);
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 899px) {
+    nav {
+        display: none;
+    }
+    header {
+        text-align: center;
+        justify-content: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    .paragraph {
+        text-align: center;
+    }
+    #image-container {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 899px) {
+    #mobilenav {
+        display: none;
+    }
+}

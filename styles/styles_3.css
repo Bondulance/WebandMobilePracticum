@@ -1,0 +1,144 @@
+:root {
+    --teal: #5596A0;
+}
+
+header {
+    padding: 5px 30px 5px 30px;
+    box-shadow: 10px 0px 10px 0px darkslategray;
+}
+body {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    padding-right: 20px;
+}
+.link {
+    color: black;
+    text-decoration: none;
+    font-family: "Literata", serif;
+}
+
+.link1 {
+    color: black;
+    text-decoration: underline;
+    font-family: "Literata", serif;
+}
+.link1:hover {
+    color:white
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: "Literata", serif;
+    font-size: 3.5rem;
+}
+h2 {
+    font-family: "Literata", serif;
+    color: var(--teal);
+}
+main {
+    margin: 0px 30px 0px 30px;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px 0px 50px;
+    align-items: center;
+}
+
+#image-container {
+    width: 1200px;
+    height: 700px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 70px;
+    gap: 20px;
+}
+.maincontent-border {
+    border: 5px solid var(--teal);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    background: var(--teal);
+    margin-top: 100px;
+    padding: 20px 100px 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#date {
+    font-family: "Literata", serif;
+
+}
+h3 {
+    font-family: "Literata", serif;
+}
+p {
+    font-family: "Literata", serif;
+}
+
+@media (max-width: 1897px) {
+    #image-container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1703px) {
+    #image-container {
+        width: 750px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1403px) {
+    #image-container {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 919px) {
+    #top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px 50px 0px 50px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 685px) {
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-top: 30px;
+        gap: 20px;
+    }
+    #image-container {
+        width: 300px;
+        height: 200px;
+    }
+    footer {
+        background: var(--teal);
+        margin-top: 50px;
+        padding: 20px 100px 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

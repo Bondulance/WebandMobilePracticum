@@ -72,7 +72,7 @@ header {
 }
 
 #banner {
-    background-image: url("/WebandMobilePracticum/images/Pulteny_9_1__b588f303-9108-42f9-a0d2-567fe1f88c94.jpg");
+    background-image: url("/WebandMobilePracticum/images/waterfall.jpg");
     padding: 100px 0px 100px 0px;
     object-fit: fill;
     display: flex;
@@ -107,6 +107,15 @@ footer {
 }
 #date {
     color: white;
+}
+
+.link1 {
+    color: white;
+    text-decoration: underline;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;   
+}
+.link1:hover {
+    color:var(--orange)
 }
 
 .maincontent {
